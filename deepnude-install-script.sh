@@ -3,7 +3,7 @@
 # Installing dependencies
 
 clear
-echo "Do you want install DeepNude dependencies? [Y/n]"
+echo "Do you want install DeepNude's dependencies? [Y/n]"
 read insdep
 clear
 
@@ -25,20 +25,28 @@ fi
 # Installing Python and PiP
 
 clear
-echo "Do you want install Python and PiP? [Y/n]"
+echo "Would you like to install Python's dependencies and Pip?? [Y/n]"
 read insPython
 clear
 
 if [ $insPython == y ] || [ $insPython == Y ];
 
 then 
-sudo wget -P /tmp https://www.python.org/ftp/python/3.9.1/Python-3.9.1.tar.xz
-sudo tar -xf Python-3.9.1.tar.xz
-sudo rm -rf Python-3.9.1.tar.xz
-sudo /tmp/Python-3.9.1/configure
-sudo rm -rf /tmp/Python-3.9.1/
 
-sudo apt-get install python3-pip
+    mkdir tempPy
+    cd tempPy
+    
+    sudo apt install build-essential zlib1g-dev libjpeg-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev libffi-dev libsqlite3-dev sqlite3 liblzma-dev curl libbz2-dev
+    
+    wget https://www.python.org/ftp/python/3.9.1/Python-3.9.1.tar.xz
+    tar -xf ./Python-3.9.1.tar.xz
+    cd Python-3.9.1
+    ./configure --with-ensurepip=install
+
+    sudo make -j 2 && sudo make altinstall
+    
+    cd ../..
+    sudo rm -rf ./tempPy
 
 fi
 
