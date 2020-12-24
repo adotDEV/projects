@@ -54,8 +54,7 @@ fi
 
 cd ~/Documents # <----- Change this to change DeepNude local installation.
 
-pip3 install opencv_python numpy pillow setuptools six wheel 
-pip3 install torch==1.7.0+cpu torchvision==0.8.1+cpu -f https://download.pytorch.org/whl/torch_stable.html
+pip3.9 install opencv_python numpy pillow setuptools six wheel torch torchvision
 
 git clone https://github.com/zhengyima/DeepNude_NoWatermark_withModel.git
 mv ./DeepNude_NoWatermark_withModel ./deepnude
