@@ -10,15 +10,7 @@ clear
 if [ $insdep == y ] || [ $insdep == Y ]; then
 
     sudo apt update
-
     sudo apt install git
-
-    git clone https://github.com/Homebrew/brew ~/.linuxbrew/Homebrew
-    mkdir ~/.linuxbrew/bin
-    ln -s ~/.linuxbrew/Homebrew/bin/brew ~/.linuxbrew/bin
-    eval $(~/.linuxbrew/bin/brew shellenv)
-
-brew install xz
 
 fi
 
