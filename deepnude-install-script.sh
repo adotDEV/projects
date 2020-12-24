@@ -1,19 +1,4 @@
 #!/bin/bash
-
-# Installing dependencies
-
-clear
-echo "Do you want install DeepNude's dependencies? [Y/n]"
-read insdep
-clear
-
-if [ $insdep == y ] || [ $insdep == Y ]; then
-
-    sudo apt update
-    sudo apt install git
-
-fi
-
 # Installing Python and PiP
 
 clear
@@ -28,6 +13,7 @@ then
     mkdir tempPy
     cd tempPy
     
+    sudo apt update
     sudo apt install build-essential zlib1g-dev libjpeg-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev libffi-dev libsqlite3-dev sqlite3 liblzma-dev curl libbz2-dev
     
     wget https://www.python.org/ftp/python/3.9.1/Python-3.9.1.tar.xz
@@ -46,6 +32,7 @@ fi
 
 cd ~/Documents # <----- Change this to change DeepNude local installation.
 
+sudo apt install git
 pip3.9 install opencv_python numpy pillow setuptools six wheel torch torchvision
 
 git clone https://github.com/zhengyima/DeepNude_NoWatermark_withModel.git
@@ -85,4 +72,3 @@ clear
 
 echo "code by adotDEV"
 echo "please visit https://github.com/adotdev/"
-
