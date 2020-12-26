@@ -10,7 +10,7 @@ you can [download here](https://github.com/adotDEV/adotDEV/releases/download/dee
 download deepnude telegram bot by clicking [here](https://github.com/adotDEV/adotDEV/releases/download/deepnude-telegrambot/deepnude-telegrambot.py)
 
 
-move telegram bot to you deepnude folder (if you no have deepnude check `deepnude install script` or [download here](https://github.com/zhengyima/DeepNude_NoWatermark_withModel))
+move deepnude-telegrambot.py to your deepnude folder (if you no have deepnude check `deepnude install script` or [download here](https://github.com/zhengyima/DeepNude_NoWatermark_withModel))
 
 install python-telegram-bot in terminal with:
 
