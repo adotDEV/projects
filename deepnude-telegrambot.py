@@ -1,4 +1,4 @@
-# import this script to your deepnude folder
+# import this script to your deepnude folder and execute with: python3 deepnude-telegrambot.py
 # code by adotDEV
 # please visit https://github.com/adotdev
 
