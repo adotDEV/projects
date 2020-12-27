@@ -5,7 +5,6 @@ you can [download here](https://github.com/adotDEV/adotDEV/releases/download/dee
 $ bash deepnude-install-script.sh
 ```
 # deepnude telegram bot #
-## installing
 
 download deepnude telegram bot by clicking [here](https://github.com/adotDEV/adotDEV/releases/download/deepnude-telegrambot/deepnude-telegrambot.py)
 
